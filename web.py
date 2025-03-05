@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 import logging
 from datetime import datetime
-from fpdf import FPDF
+
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
