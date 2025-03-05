@@ -6,3 +6,6 @@ joblib
 seaborn
 googlemaps
 chatbot
+fpdf
+folium
+streamlit-folium
