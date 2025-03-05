@@ -9,3 +9,4 @@ chatbot
 fpdf
 folium
 streamlit-folium
+dotenv
