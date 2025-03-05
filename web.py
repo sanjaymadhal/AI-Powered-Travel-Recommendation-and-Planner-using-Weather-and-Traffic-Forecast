@@ -3,8 +3,6 @@ import pandas as pd
 import requests
 import logging
 from datetime import datetime
-from dotenv import load_dotenv
-import os
 from fpdf import FPDF
 
 # Set up logging
@@ -12,9 +10,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Load environment variables
-load_dotenv()
-OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
-GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
+
+OPENWEATHER_API_KEY = "3fcbb4e945f4372e7b24f6d4b17b9ec4"
+GOOGLE_MAPS_API_KEY = "AIzaSyDHuLqogx1pAdE8ljnahXazw7D6vFrshkE"
 
 if not OPENWEATHER_API_KEY or not GOOGLE_MAPS_API_KEY:
     st.error("API keys not found. Please set up a .env file with OPENWEATHER_API_KEY and GOOGLE_MAPS_API_KEY.")
