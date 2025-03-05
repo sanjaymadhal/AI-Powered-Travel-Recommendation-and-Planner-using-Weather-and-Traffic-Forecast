@@ -9,14 +9,17 @@ from dotenv import load_dotenv
 import os
 from fpdf import FPDF
 
-# Set up logging
+# Set up logging (optional, for debugging)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 # Load environment variables
-load_dotenv()
-OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
-GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
+try:
+    OPENWEATHER_API_KEY = st.secrets["OPENWEATHER_API_KEY"]
+    GOOGLE_MAPS_API_KEY = st.secrets["GOOGLE_MAPS_API_KEY"]
+except KeyError:
+    st.error("API keys not found. Please set OPENWEATHER_API_KEY and GOOGLE_MAPS_API_KEY in Streamlit secrets.")
+    st.stop()
 
 if not OPENWEATHER_API_KEY or not GOOGLE_MAPS_API_KEY:
     st.error("API keys not found. Please set up a .env file with OPENWEATHER_API_KEY and GOOGLE_MAPS_API_KEY.")
