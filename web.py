@@ -3,7 +3,6 @@ import pandas as pd
 import requests
 import logging
 from datetime import datetime
-import folium
 from streamlit_folium import st_folium
 from dotenv import load_dotenv
 import os
