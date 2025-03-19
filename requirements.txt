@@ -12,3 +12,4 @@ streamlit-folium
 streamlit_lottie
 streamlit_elements
 dotenv
+reportlib
