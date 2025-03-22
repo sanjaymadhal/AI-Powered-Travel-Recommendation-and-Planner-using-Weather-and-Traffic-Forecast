@@ -13,3 +13,4 @@ streamlit_lottie
 streamlit_elements
 dotenv
 reportlab
+google.generativeai
