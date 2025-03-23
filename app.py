@@ -976,7 +976,7 @@ elif page == "✈️ PLAN YOUR TRIP":
                     ])
                 
                 # Create the table
-                table = Table(table_data, colWidths=[2.5*inch, 1*inch, 1*inch, 1*inch, 0.7*inch])
+                table = Table(table_data, colWidths=[3.5*inch, 1.3*inch, 1.3*inch, 1.3*inch, 1.0*inch])
                 
                 # Add dark theme style to the table
                 table.setStyle(TableStyle([
