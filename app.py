@@ -980,14 +980,14 @@ elif page == "✈️ PLAN YOUR TRIP":
                 
                 # Add dark theme style to the table
                 table.setStyle(TableStyle([
-                    ('BACKGROUND', (0, 0), (-1, 0), colors.darkblue),
-                    ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+                    ('BACKGROUND', (0, 0), (-1, 0), colors.lightcoral),
+                    ('TEXTCOLOR', (0, 0), (-1, 0), colors.black),
                     ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
                     ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
                     ('FONTSIZE', (0, 0), (-1, 0), 12),
                     ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
                     ('BACKGROUND', (0, 1), (-1, -1), colors.darkslategray),
-                    ('TEXTCOLOR', (0, 1), (-1, -1), colors.whitesmoke),
+                    ('TEXTCOLOR', (0, 1), (-1, -1), colors.black),
                     ('GRID', (0, 0), (-1, -1), 1, colors.darkgrey)
                 ]))
                 
