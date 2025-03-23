@@ -967,8 +967,9 @@ elif page == "✈️ PLAN YOUR TRIP":
                 table_data = [["Place", "Category", "Best Time", "Travel Time", "Rating"]]
                 
                 for item in day_items:
+                    place_paragraph = Paragraph(item['Place'], normal_style)
                     table_data.append([
-                        item['Place'],
+                        place_paragraph,
                         item['Category'],
                         item['Best Time'],
                         item['Travel Time'],
@@ -976,7 +977,7 @@ elif page == "✈️ PLAN YOUR TRIP":
                     ])
                 
                 # Create the table
-                table = Table(table_data, colWidths=[3.5*inch, 1.3*inch, 1.3*inch, 1.3*inch, 1.0*inch])
+                table = Table(table_data, colWidths=[2.5*inch, 1.0*inch, 1.0*inch, 1.0*inch, 0.7*inch])
                 
                 # Add dark theme style to the table
                 table.setStyle(TableStyle([
