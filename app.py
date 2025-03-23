@@ -931,11 +931,11 @@ elif page == "✈️ PLAN YOUR TRIP":
             # Define styles
             styles = getSampleStyleSheet()
             title_style = styles['Heading1']
-            title_style.textColor = colors.whitesmoke
+            title_style.textColor = colors.black
             subtitle_style = styles['Heading2']
-            subtitle_style.textColor = colors.lightblue
+            subtitle_style.textColor = colors.black
             normal_style = styles['Normal']
-            normal_style.textColor = colors.whitesmoke
+            normal_style.textColor = colors.black
             
             # Add title
             elements.append(Paragraph(f"Travel Itinerary for {destination}", title_style))
@@ -986,7 +986,7 @@ elif page == "✈️ PLAN YOUR TRIP":
                     ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
                     ('FONTSIZE', (0, 0), (-1, 0), 12),
                     ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
-                    ('BACKGROUND', (0, 1), (-1, -1), colors.darkslategray),
+                    ('BACKGROUND', (0, 1), (-1, -1), colors.lightgreen),
                     ('TEXTCOLOR', (0, 1), (-1, -1), colors.black),
                     ('GRID', (0, 0), (-1, -1), 1, colors.darkgrey)
                 ]))
