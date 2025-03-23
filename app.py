@@ -1743,6 +1743,7 @@ elif page=="🤖 AI ASSISTANCE":
     - Tourist destinations, historical sites,day-wise iternaries with expense and cultural attractions
     - personalised budget-friendly,comfort,luxury cost estimation for every travel recommendation
     - must try Local Foods
+    - suggest smart travel routes and pit stops if required
     - Transportation facilities and accomidation for destination recommendations
     - Safety tips and health precautions for travelers
 
