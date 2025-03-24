@@ -1042,7 +1042,7 @@ def load_translations():
         "Please configure your Azure API settings in the sidebar to enable the AI chat.": "AI চ্যাট সক্ষম করতে সাইডবারে আপনার Azure API সেটিংস কনফিগার করুন।"
 
         },
-        "pb": {
+        "pa": {
             # Sidebar
             "header_title": "✈️ ਵਾਂਡਰਵਾਈਜ਼",  # Transliteration of brand name
             "explore_discover_experience": "ਖੋਜੋ। ਖੋਜੋ। ਅਨੁਭਵ ਕਰੋ।",
